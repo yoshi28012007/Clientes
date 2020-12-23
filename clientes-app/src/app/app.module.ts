@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 //GEP-INI
 import { RouterModule, Routes } from '@angular/router';
 import { DirectivaComponent } from './directiva/directiva.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const routes : Routes = [
   {path:'', redirectTo: '/clientes', pathMatch: 'full'},
@@ -28,6 +29,7 @@ const routes : Routes = [
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     RouterModule.forRoot(routes)
   ],
